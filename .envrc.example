@@ -1,0 +1,10 @@
+# Tailscale Ephemeral Key, obtained from https://login.tailscale.com/admin/settings/authkeys
+export TSK_EPHEMERAL_KEY=
+# Tailscale API Key, obtained from https://login.tailscale.com/admin/settings/authkeys
+export TSK_API_KEY=
+# Tailscale Tailnet, shown at the top left of https://login.tailscale.com/admin/machines
+export TSK_TAILNET=
+# Tailscale Device Hostname
+export TSK_HOSTNAME=my-tsk-cluster
+# Kubernetes Service CIDR
+export TSK_CIDR=172.20.0.0/16

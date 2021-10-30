@@ -1,0 +1,16 @@
+.:53 {
+  errors
+  health {
+    lameduck 5s
+  }
+  ready
+  rewrite {
+    name regex (.*)\.tsk {1}.svc.cluster.local
+    answer name (.*)\.svc\.cluster\.local {1}.tsk
+  }
+  forward . /etc/resolv.conf
+  cache 30
+  loop
+  reload
+  loadbalance
+}
